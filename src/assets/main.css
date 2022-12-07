@@ -1,0 +1,5 @@
+@import "./fonts.css";
+
+#app{
+    font-family: "Smiley Sans", monospace;
+}
