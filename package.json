@@ -16,6 +16,7 @@
   "dependencies": {
     "@nutui/nutui": "^3.3.0",
     "@vitejs/plugin-legacy": "^2.3.1",
+    "@vuepress/client": "^2.0.0-beta.45",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
