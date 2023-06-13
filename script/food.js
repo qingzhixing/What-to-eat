@@ -5,6 +5,9 @@ define(function(){
             this.description = description;
             this.pictureUrl = pictureUrl;
         }
+        toString = function () {
+            return "name:" + this.name + "\ndescription:" + this.description + "\npictureUrl:" + this.pictureUrl;
+        }
     }
     
     var foodList = [
@@ -12,8 +15,13 @@ define(function(){
         new Food("西瓜(Watermelon)","西瓜奇怒！","https://th.bing.com/th/id/OIP.ge2CV54nr2o5UeGKdTOosQHaE7?pid=ImgDet&rs=1"),
     ];
 
+    function RandomFood() {
+        return foodList[Math.floor(Math.random() * foodList.length)];
+    }
+
     return {
         "Food": Food,
         "foodList": foodList,
+        "RandomFood":RandomFood,
     }
 });

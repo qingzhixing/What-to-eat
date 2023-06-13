@@ -26,8 +26,17 @@ require(["food"], function (food) {
         SetRandomEmojisTitle();
     }
 
+    function RegisterExtractionButtonHandler() {
+        let extractionButton = document.getElementById("extraction-button");
+        extractionButton.onclick = () => {
+            let randomFood = food.RandomFood();
+            alert(randomFood);
+        }
+    }
+
     window.onload= () => {
         StartChangeTitleTextEmoji();
+        RegisterExtractionButtonHandler()
         console.log("@qingzhixing 2023-XX-XX");
         console.log(food.foodList);
     }
