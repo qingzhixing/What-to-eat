@@ -10,6 +10,11 @@
 
  open the index.html
 
-## 🥗项目预览
+## 🥗View
 
 [Github](https://qingzhixing.github.io/What-to-eat)
+
+
+## 🍛By The Way
+
+作为一个练习，本项目使用了Require.js, Less

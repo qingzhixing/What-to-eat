@@ -12,8 +12,6 @@ define(function(){
         new Food("西瓜(Watermelon)","西瓜奇怒！","https://th.bing.com/th/id/OIP.ge2CV54nr2o5UeGKdTOosQHaE7?pid=ImgDet&rs=1"),
     ];
 
-    console.log("load food.js");
-
     return {
         "Food": Food,
         "foodList": foodList,
