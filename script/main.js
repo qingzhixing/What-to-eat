@@ -19,6 +19,4 @@ function StartChangeTitleTextEmoji() {
 window.onload= () => {
     StartChangeTitleTextEmoji();
     console.log("@qingzhixing 2023-XX-XX");
-    console.log("########################################################");
-    console.log(document.body);
 }
