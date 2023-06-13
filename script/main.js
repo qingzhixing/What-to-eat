@@ -2,7 +2,7 @@ require.config({
     baseUrl: "script",
 });
 
-require(["types"], function (types) { 
+require(["food"], function (food) { 
     
     function StartChangeTitleTextEmoji() {
         const titleLeftEmojis = ['🍕','🥓','🥩','🍗','🍖','🧇'];
@@ -29,9 +29,9 @@ require(["types"], function (types) {
     window.onload= () => {
         StartChangeTitleTextEmoji();
         console.log("@qingzhixing 2023-XX-XX");
-        console.log(types.Picture());
+        console.log(food.foodList);
     }
-    
+
 });
 
 
