@@ -53,12 +53,18 @@ require(["food"], function (food) {
         }
     }
 
+    function ScriptLoadOK() {
+        let scriptLoadMessager = document.getElementById("script-load-messager");
+        scriptLoadMessager.innerText = "脚本加载成功！请开始使用吧！";
+    }
+
     window.onload= () => {
         StartChangeTitleTextEmoji();
         RegisterExtractionButtonHandler();
         RegisterWindowConfirmButtonHandler();
         console.log("@qingzhixing 2023-XX-XX");
         // console.log(food.foodList);
+        ScriptLoadOK();
     }
 
 });
