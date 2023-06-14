@@ -49,7 +49,7 @@ require(["food"], function (food) {
         let popUpWindowContainer = document.getElementById("pop-up-window-container");
         confirmButton.onclick = () => {
             popUpWindowContainer.style.display = "none";
-            console.log("clicked the confirm button");
+            // console.log("clicked the confirm button");
         }
     }
 
@@ -58,7 +58,7 @@ require(["food"], function (food) {
         RegisterExtractionButtonHandler();
         RegisterWindowConfirmButtonHandler();
         console.log("@qingzhixing 2023-XX-XX");
-        console.log(food.foodList);
+        // console.log(food.foodList);
     }
 
 });
