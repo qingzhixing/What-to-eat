@@ -1,4 +1,4 @@
-@import "background";
+@import "preset";
 @import "font";
 
 :root{
@@ -6,7 +6,12 @@
     font-family: "Smilely Sans";
 }
 
+*{
+    z-index: 1;
+}
+
 body{
+    z-index: 0;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -22,6 +27,7 @@ header{
     width: 100%;
     height: min-content;
     padding: 10px;
+    box-sizing: border-box;
 
     font-size: 30px;
     letter-spacing: 5px;
@@ -32,6 +38,7 @@ header{
 }
 
 #pop-up-window-container{
+    display:none;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -42,22 +49,38 @@ header{
     //水平中心
     justify-content: center;
 
+    // background-color: rgba(0,0,0,0.3);
+
     #window{
         width: 50vmax;
-        height: max-content+20px;
+        height: max-content;
 
         margin: 0;
-        padding: 0;
+        padding: 2px;
+        box-sizing: border-box;
 
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        #title{}
-        #picture{
+        background-color: beige;
+        border-radius: 20px;
+        box-shadow: 
+            2px 2px rgba(0,0,0,0.3),
+            -2px -2px rgba(255, 255, 255, 1);
+
+        #window-title{
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        #window-picture{
             width: 80%;
         }
-        #description{}
-        #confirm-button{}
+        #window-description{
+            font-weight: lighter;
+        }
+        #window-confirm-button{
+            .white-button();
+        }
     }
 }

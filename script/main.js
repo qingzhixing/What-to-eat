@@ -30,13 +30,33 @@ require(["food"], function (food) {
         let extractionButton = document.getElementById("extraction-button");
         extractionButton.onclick = () => {
             let randomFood = food.RandomFood();
-            alert(randomFood);
+
+            let popUpWindowContainer = document.getElementById("pop-up-window-container");
+            let windowTitle = document.getElementById("window-title");
+            let windowPicture = document.getElementById("window-picture");
+            let windowDescription = document.getElementById("window-description");
+
+            windowTitle.innerText = randomFood.name;
+            windowPicture.src = randomFood.pictureUrl;
+            windowDescription.innerText = randomFood.description;
+
+            popUpWindowContainer.style.display = "";
+        }
+    }
+
+    function RegisterWindowConfirmButtonHandler() {
+        let confirmButton = document.getElementById("window-confirm-button");
+        let popUpWindowContainer = document.getElementById("pop-up-window-container");
+        confirmButton.onclick = () => {
+            popUpWindowContainer.style.display = "none";
+            console.log("clicked the confirm button");
         }
     }
 
     window.onload= () => {
         StartChangeTitleTextEmoji();
-        RegisterExtractionButtonHandler()
+        RegisterExtractionButtonHandler();
+        RegisterWindowConfirmButtonHandler();
         console.log("@qingzhixing 2023-XX-XX");
         console.log(food.foodList);
     }
