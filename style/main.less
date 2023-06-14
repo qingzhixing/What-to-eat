@@ -30,3 +30,34 @@ header{
     display: flex;
     justify-content: center;
 }
+
+#pop-up-window-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    display: flex;
+    //垂直中心
+    align-items: center;
+    //水平中心
+    justify-content: center;
+
+    #window{
+        width: 50vmax;
+        height: max-content+20px;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #title{}
+        #picture{
+            width: 80%;
+        }
+        #description{}
+        #confirm-button{}
+    }
+}

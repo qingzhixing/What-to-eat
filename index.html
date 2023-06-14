@@ -18,7 +18,7 @@
     <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js" defer async="true"
         data-main="./script/main.js"></script>
 
-    <link rel="stylesheet/less" type="text/css" href="style/main.less" />
+    <link rel="stylesheet/less" type="text/css" href="style/main.less" defer async="true" />
 
     <title>🍨今天吃什么?🍹</title>
 </head>
@@ -30,6 +30,15 @@
         <button id="extraction-button">点我看看吃什么</button>
     </main>
     <footer>Footer</footer>
+    <div id="pop-up-window-container">
+        <div id="window">
+            <div id="title">Window Title</div>
+            <img loading="lazy" src="https://pic57.photophoto.cn/20201215/0013026060492354_b.jpg" alt="我是一张图片;)"
+                id="picture"></i>
+            <div id="description">Description</div>
+            <button id="confirm-button">Confirm</button>
+        </div>
+    </div>
 </body>
 
 </html>
