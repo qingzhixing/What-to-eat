@@ -54,6 +54,17 @@ require(["food"], function (food) {
         }
     }
 
+    function RegisterFooterButtonsHandler() {
+        let leftButton = document.getElementById("footer-button-left");
+        let rightButton = document.getElementById("footer-button-right");
+        leftButton.onclick = () => { 
+            window.open("https://github.com/qingzhixing");
+        };
+        rightButton.onclick = () => {
+            window.open("https://github.com/qingzhixing/What-to-eat");
+        };
+    }
+
     function ScriptLoadOK() {
         let scriptLoadMessageDiv = document.getElementById("script-load-message-div");
         scriptLoadMessageDiv.innerText = "脚本加载成功！请开始使用吧！";
@@ -63,6 +74,7 @@ require(["food"], function (food) {
         StartChangeTitleTextEmoji();
         RegisterExtractionButtonHandler();
         RegisterWindowConfirmButtonHandler();
+        RegisterFooterButtonsHandler();
         console.log("@qingzhixing 2023-XX-XX");
         // console.log(food.foodList);
         ScriptLoadOK();
