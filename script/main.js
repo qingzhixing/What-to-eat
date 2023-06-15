@@ -60,6 +60,7 @@ require(["food"], function (food) {
     }
 
     async function LoadSmilelySans() {
+        require("../static/font/SmileySans-Oblique.ttf.woff2");
         const SmilelySans = new FontFace("Smilely Sans", url("../static/font/SmileySans-Oblique.ttf.woff2"));
         document.fonts.add(SmilelySans);
         SmilelySans.load().then(() => {
