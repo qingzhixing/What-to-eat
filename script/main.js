@@ -3,6 +3,7 @@ require.config({
 });
 
 require(["food"], function (food) { 
+    console.log(("Run in main.js"));
     
     function StartChangeTitleTextEmoji() {
         const titleLeftEmojis = ['🍕','🥓','🥩','🍗','🍖','🧇'];
@@ -58,14 +59,26 @@ require(["food"], function (food) {
         scriptLoadMessager.innerText = "脚本加载成功！请开始使用吧！";
     }
 
-    window.onload= () => {
+    async function LoadSmilelySans() {
+        const SmilelySans = new FontFace("Smilely Sans", url("../static/font/SmileySans-Oblique.ttf.woff2"));
+        document.fonts.add(SmilelySans);
+        SmilelySans.load().then(() => {
+            document.body.style.fontFamily = "Smilely Sans";
+            console.log("Smilely Sans load OK!");
+        });
+    }
+
+    window.onload = () => {
         StartChangeTitleTextEmoji();
         RegisterExtractionButtonHandler();
         RegisterWindowConfirmButtonHandler();
         console.log("@qingzhixing 2023-XX-XX");
         // console.log(food.foodList);
+        //异步加载得意黑字体
+        // LoadSmilelySans();
         ScriptLoadOK();
     }
+
 
 });
 
