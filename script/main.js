@@ -32,7 +32,7 @@ require(["food"], function (food) {
         extractionButton.onclick = () => {
             let randomFood = food.RandomFood();
 
-            let popUpWindowContainer = document.getElementById("pop-up-window-container");
+            let popUpWindow = document.getElementById("pop-up-window");
             let windowTitle = document.getElementById("window-title");
             let windowPicture = document.getElementById("window-picture");
             let windowDescription = document.getElementById("window-description");
@@ -47,9 +47,9 @@ require(["food"], function (food) {
 
     function RegisterWindowConfirmButtonHandler() {
         let confirmButton = document.getElementById("window-confirm-button");
-        let popUpWindowContainer = document.getElementById("pop-up-window-container");
+        let popUpWindow = document.getElementById("pop-up-window");
         confirmButton.onclick = () => {
-            popUpWindowContainer.style.display = "none";
+            popUpWindow.style.display = "none";
             // console.log("clicked the confirm button");
         }
     }

@@ -33,12 +33,17 @@ header{
 
     display: flex;
     justify-content: center;
+
 }
 
 main{
     width: 100%;
     box-sizing: border-box;
     flex: 1;
+
+    #extraction-button{
+        .neumorphism-button();
+    }
 }
 
 footer{
@@ -64,78 +69,61 @@ footer{
     }
 }
 
-#pop-up-window-container{
-    display:none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
+
+#pop-up-window{
+    .align-center-screen();
+    max-width: 50vmin;
+    height: min-content;
+
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
 
     display: flex;
-    //垂直中心
+    flex-direction: column;
     align-items: center;
-    //水平中心
-    justify-content: center;
+    gap: 5px;
+    
 
-    // background-color: rgba(0,0,0,0.3);
+    .neumorphism-card();
 
-    #window{
-        max-width: 50vmin;
-        height: min-content;
+    #window-title{
 
-        margin: 0;
-        padding: 5px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+        // width: max-content;
+    }
+
+    #window-picture{
+        width: 80%;
+        max-height: 40vmax;
+
+        display: block;
+
+        flex: 1;
+
         box-sizing: border-box;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        
+        border-radius: 62px;
+        background: #e6eef4;
+        filter:drop-shadow(5px 5px 10px #c8cfd4);
 
-        // background-color: beige;
-        border-radius: 20px;
-        box-shadow: 
-            5px 5px 8px rgba(0,0,0,0.3),
-            -2px -2px 5px rgba(255, 255, 255, 0.5);
+        object-fit: cover;
+        object-position: left top;
+        transition: 1s;
 
-        #window-title{
-
-            font-size: 30px;
-            letter-spacing: 2px;
-            text-align: center;
-            // width: max-content;
+        &:hover{
+            object-position: right bottom;
         }
+    }
 
-        #window-picture{
-            width: 80%;
-            max-height: 40vmax;
+    #window-description{
 
-            display: block;
+        font-weight: lighter;
+    }
 
-            flex: 1;
-
-            box-sizing: border-box;
-
-            border-radius: 62px;
-            background: #e6eef4;
-            filter:drop-shadow(5px 5px 10px #c8cfd4);
-
-            object-fit: cover;
-            object-position: left top;
-            transition: 1s;
-
-            &:hover{
-                object-position: right bottom;
-            }
-        }
-
-        #window-description{
-
-            font-weight: lighter;
-        }
-
-        #window-confirm-button{
-            .neumorphism-button();
-        }
+    #window-confirm-button{
+        .neumorphism-button();
     }
 }
