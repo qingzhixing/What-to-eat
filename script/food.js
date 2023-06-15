@@ -20,7 +20,14 @@ define(["utilities"],function(utilities){
     ];
 
     function RandomFood() {
-        return foodList[Math.floor(Math.random() * foodList.length)];
+        if (typeof(arguments.callee.arrayIndex) == "undefined" ||
+            arguments.callee.arrayIndex >= foodList.length) {
+            arguments.callee.arrayIndex = 0;
+            utilities.ShuffleArray(foodList);
+            console.info("Shuffled food list");
+        }
+        console.log("arrayIndex:"+arguments.callee.arrayIndex);
+        return foodList[arguments.callee.arrayIndex++];
     }
 
     return {
