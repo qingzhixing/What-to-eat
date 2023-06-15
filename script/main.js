@@ -3,7 +3,7 @@ require.config({
 });
 
 require(["food"], function (food) { 
-    console.log(("Run in main.js"));
+    console.log(("Load in main.js"));
     
     function StartChangeTitleTextEmoji() {
         const titleLeftEmojis = ['🍕','🥓','🥩','🍗','🍖','🧇'];
@@ -75,7 +75,7 @@ require(["food"], function (food) {
         console.log("@qingzhixing 2023-XX-XX");
         // console.log(food.foodList);
         //异步加载得意黑字体
-        // LoadSmilelySans();
+        LoadSmilelySans();
         ScriptLoadOK();
     }
 
