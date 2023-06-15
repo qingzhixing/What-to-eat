@@ -16,6 +16,7 @@ define(function(){
         new Food("板烧鸡腿堡(Grilled Chicken Sandwich)","麦当当板烧鸡腿堡好吃🍔😋","https://officialwebsitestorage.blob.core.chinacloudapi.cn/public/upload/attachment/2022/08/202208081012161806.png"),
         new Food("麻辣小龙虾(Spicy Crayfish)", "口味虾~(吸溜)", "https://img.zcool.cn/community/016eb15d0f16aea801205e4b68476d.jpg@1280w_1l_2o_100sh.jpg"),
         new Food("烤鸭(Baked Chicken)", "烤鸭奇怒！", "https://img.zcool.cn/community/0129f15eb90670a80121481446c7a5.jpg@1280w_1l_2o_100sh.jpg"),
+        new Food("烤肉(Baked Rooibos)", "一起去吃烤肉吧！(上山)", "https://ts1.cn.mm.bing.net/th/id/R-C.c0b89c4104b92147d5f9af78a107b7bf?rik=MOa8fPLWm1GMvA&riu=http%3a%2f%2fimg95.699pic.com%2fphoto%2f50021%2f2069.jpg_wh860.jpg&ehk=pxqxSdi1DrIrAuvlItkijJwVk2Kf%2fanWqtlU3Heq5mE%3d&risl=&pid=ImgRaw&r=0")
     ];
 
     function RandomFood() {

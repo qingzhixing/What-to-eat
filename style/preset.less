@@ -1,6 +1,4 @@
 .colorful-background{
-    
-    z-index: -1;
 
     background-color: #e493d0;
     background-image: 
@@ -90,8 +88,8 @@
                 40vmax 60vmax;
         }
     }
-
     &::after{
+        z-index: -1;
         content: '';
         display: block;
         position: fixed;
@@ -128,5 +126,28 @@
     &:active {
         position:relative;
         top:1px;
+        border-radius: 5px;
+    }
+}
+
+//拟物风格
+.neumorphism-button{
+    border-radius: 5px;
+    border: 0;
+
+    box-sizing: border-box;
+	padding:10px 24px;
+
+    background-color: transparent;
+
+    border-radius: 5px;
+    box-shadow:  2px 2px 10px rgba(0,0,0,0.3),
+                -1px -1px 10px rgba(255,255,255,1);
+
+    display: inline-block;
+
+    &:active{
+        box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3),
+                    inset -1px -1px 5px rgba(255,255,255,0.5);
     }
 }

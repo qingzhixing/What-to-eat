@@ -55,8 +55,8 @@ require(["food"], function (food) {
     }
 
     function ScriptLoadOK() {
-        let scriptLoadMessager = document.getElementById("script-load-messager");
-        scriptLoadMessager.innerText = "脚本加载成功！请开始使用吧！";
+        let scriptLoadMessageDiv = document.getElementById("script-load-message-div");
+        scriptLoadMessageDiv.innerText = "脚本加载成功！请开始使用吧！";
     }
 
     window.onload = () => {
