@@ -41,7 +41,7 @@ require(["food"], function (food) {
             windowPicture.src = randomFood.pictureUrl;
             windowDescription.innerText = randomFood.description;
 
-            popUpWindowContainer.style.display = "";
+            popUpWindow.style.display = "";
         }
     }
 
