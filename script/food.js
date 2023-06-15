@@ -1,4 +1,4 @@
-define(function(){
+define(["utilities"],function(utilities){
     class Food{
         constructor(name="", description="", pictureUrl="") {
             this.name = name;
